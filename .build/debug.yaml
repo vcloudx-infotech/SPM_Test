@@ -1,0 +1,50 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "EnxRTCiOSWrapper-arm64-apple-macosx15.0-debug.module": ["<EnxRTCiOSWrapper-arm64-apple-macosx15.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<EnxRTCiOSWrapper-arm64-apple-macosx15.0-debug.module>"]
+  "test": ["<EnxRTCiOSWrapper-arm64-apple-macosx15.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/.build/artifacts/spm_test/EnxRTCiOS/EnxRTCiOS.xcframework/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/Sources/EnxRTCiOSWrapper/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/.build/arm64-apple-macosx/debug/EnxRTCiOSWrapper.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/Sources/EnxRTCiOSWrapper/EnxRTCiOSWrapper.swift"]
+    outputs: ["/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/.build/arm64-apple-macosx/debug/EnxRTCiOSWrapper.build/sources"]
+    description: "Write auxiliary file /Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/.build/arm64-apple-macosx/debug/EnxRTCiOSWrapper.build/sources"
+
+  "/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<EnxRTCiOSWrapper-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/.build/arm64-apple-macosx/debug/EnxRTCiOSWrapper.build/EnxRTCiOSWrapper.swift.o","/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/.build/arm64-apple-macosx/debug/Modules/EnxRTCiOSWrapper.swiftmodule"]
+    outputs: ["<EnxRTCiOSWrapper-arm64-apple-macosx15.0-debug.module>"]
+
+  "C.EnxRTCiOSWrapper-arm64-apple-macosx15.0-debug.module":
+    tool: shell
+    inputs: ["/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/Sources/EnxRTCiOSWrapper/EnxRTCiOSWrapper.swift","/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/.build/arm64-apple-macosx/debug/EnxRTCiOSWrapper.build/sources"]
+    outputs: ["/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/.build/arm64-apple-macosx/debug/EnxRTCiOSWrapper.build/EnxRTCiOSWrapper.swift.o","/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/.build/arm64-apple-macosx/debug/Modules/EnxRTCiOSWrapper.swiftmodule"]
+    description: "Compiling Swift Module 'EnxRTCiOSWrapper' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","EnxRTCiOSWrapper","-emit-dependencies","-emit-module","-emit-module-path","/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/.build/arm64-apple-macosx/debug/Modules/EnxRTCiOSWrapper.swiftmodule","-output-file-map","/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/.build/arm64-apple-macosx/debug/EnxRTCiOSWrapper.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/.build/arm64-apple-macosx/debug/EnxRTCiOSWrapper.build/sources","-I","/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx10.13","-v","-enable-batch-mode","-index-store-path","/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/.build/arm64-apple-macosx/debug/EnxRTCiOSWrapper.build/EnxRTCiOSWrapper-Swift.h","-color-diagnostics","-swift-version","5","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-fPIC","-Xcc","-g"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/.build/artifacts/spm_test/EnxRTCiOS/EnxRTCiOS.xcframework/","/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/Sources/EnxRTCiOSWrapper/","/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/Package.swift","/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

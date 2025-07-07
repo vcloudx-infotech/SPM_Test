@@ -1,0 +1,6 @@
+framework module EnablexWebRTC {
+  umbrella header "EnablexWebRTC.h"
+
+  export *
+  module * { export * }
+}

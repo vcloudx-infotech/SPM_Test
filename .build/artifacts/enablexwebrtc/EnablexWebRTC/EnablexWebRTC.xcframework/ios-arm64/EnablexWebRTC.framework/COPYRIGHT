@@ -1,0 +1,79 @@
+EnablexWebRTC Framework - Copyright Information
+
+===============================================================================
+ENABLEX WEBRTC FRAMEWORK
+===============================================================================
+
+Copyright (c) 2024, EnablexWebRTC Framework
+Build Date: June 13, 2025
+WebRTC Source: commit e31d27d1b2
+Binary UUID: 4C4C4476-5555-3144-A1D9-07165D39436B
+
+This framework is based on the Google WebRTC Project and includes all required
+copyright notices, license terms, and patent grants as specified by the
+original WebRTC licensing terms.
+
+===============================================================================
+WEBRTC PROJECT COPYRIGHT
+===============================================================================
+
+Copyright (c) 2011, The WebRTC project authors. All rights reserved.
+
+The WebRTC project is licensed under the BSD 3-Clause License with an
+Additional IP Rights Grant for patents.
+
+WebRTC Project Authors include contributors from:
+- Google Inc.
+- Mozilla Foundation
+- Microsoft Corporation
+- Other contributors as listed in the WebRTC AUTHORS file
+
+===============================================================================
+THIRD PARTY LICENSES
+===============================================================================
+
+This framework may include code from various third-party libraries that are
+used by the WebRTC project. All third-party code retains its original
+copyright and license terms. For a complete list of third-party dependencies
+and their licenses, refer to the WebRTC project documentation.
+
+===============================================================================
+LEGAL COMPLIANCE
+===============================================================================
+
+This framework complies with all WebRTC licensing requirements:
+
+1. BSD 3-Clause License - Full compliance maintained
+2. Patent Rights Grant - Google's patent grant included
+3. Copyright Attribution - All original notices preserved
+4. Source Code Attribution - Build source documented (e31d27d1b2)
+
+For legal reviews and compliance questions, all required licensing
+documentation is included in the LICENSE file.
+
+===============================================================================
+DISTRIBUTION RIGHTS
+===============================================================================
+
+This framework may be distributed under the terms of the WebRTC BSD 3-Clause
+License and Additional IP Rights Grant. Recipients must:
+
+1. Preserve all copyright notices
+2. Include the license text in distributions
+3. Include the patent grant terms
+4. Attribute the WebRTC project authors
+
+===============================================================================
+BUILD INFORMATION
+===============================================================================
+
+WebRTC Version: e31d27d1b2
+Build Configuration: Release (Size Optimized)
+Target Platform: iOS 13.0+ ARM64
+Framework Size: 9.7MB
+dSYM Size: 196B
+Total Package: 10.4MB
+Build Tools: Ninja, GN, Clang
+Optimization: LTO enabled, size optimized
+
+Last Updated: June 13, 2025 

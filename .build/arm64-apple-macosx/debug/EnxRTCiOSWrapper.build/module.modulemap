@@ -1,0 +1,4 @@
+module EnxRTCiOSWrapper {
+    header "/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/.build/arm64-apple-macosx/debug/EnxRTCiOSWrapper.build/EnxRTCiOSWrapper-Swift.h"
+    requires objc
+}

@@ -1,0 +1,71 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "kind" : "xcframework",
+        "packageRef" : {
+          "identity" : "enablexwebrtc",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/EnableX/EnablexWebRTC.git",
+          "name" : "EnablexWebRTC"
+        },
+        "path" : "/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/.build/artifacts/enablexwebrtc/EnablexWebRTC/EnablexWebRTC.xcframework",
+        "source" : {
+          "checksum" : "60fdf989c1fcf249a9f146cfa70654fef1b569319c5c6bd9d6d94e4edbf192a7",
+          "type" : "remote",
+          "url" : "https://developer.enablex.io/downloads/EnablexWebRTC.xcframework_2.0.0.zip"
+        },
+        "targetName" : "EnablexWebRTC"
+      },
+      {
+        "kind" : "xcframework",
+        "packageRef" : {
+          "identity" : "spm_test",
+          "kind" : "root",
+          "location" : "/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test",
+          "name" : "SPM_Test"
+        },
+        "path" : "/Users/jaykumar/Desktop/code/SMP-Pack-BK/SPM_Test/.build/artifacts/spm_test/EnxRTCiOS/EnxRTCiOS.xcframework",
+        "source" : {
+          "checksum" : "9d40b991426f7010944eb2ce601573d4c3645e3cf52bbf80bb13510675afd703",
+          "type" : "remote",
+          "url" : "https://developer.enablex.io/downloads/iOS_SDK_3.1.0/EnxRTCiOS.xcframework_3.1.0.zip"
+        },
+        "targetName" : "EnxRTCiOS"
+      }
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : {
+          "basedOn" : null,
+          "packageRef" : {
+            "identity" : "enablexwebrtc",
+            "kind" : "remoteSourceControl",
+            "location" : "https://github.com/EnableX/EnablexWebRTC.git",
+            "name" : "EnablexWebRTC"
+          },
+          "state" : {
+            "checkoutState" : {
+              "revision" : "cf2162e19bcfb1dc0719ae356e35c339fcccb5ac",
+              "version" : "2.0.0"
+            },
+            "name" : "sourceControlCheckout"
+          },
+          "subpath" : "EnablexWebRTC"
+        },
+        "packageRef" : {
+          "identity" : "enablexwebrtc",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/EnableX/EnablexWebRTC.git",
+          "name" : "EnablexWebRTC"
+        },
+        "state" : {
+          "name" : "edited",
+          "path" : null
+        },
+        "subpath" : "EnablexWebRTC"
+      }
+    ]
+  },
+  "version" : 6
+}
