@@ -36,23 +36,7 @@
     ],
     "dependencies" : [
       {
-        "basedOn" : {
-          "basedOn" : null,
-          "packageRef" : {
-            "identity" : "enablexwebrtc",
-            "kind" : "remoteSourceControl",
-            "location" : "https://github.com/EnableX/EnablexWebRTC.git",
-            "name" : "EnablexWebRTC"
-          },
-          "state" : {
-            "checkoutState" : {
-              "revision" : "cf2162e19bcfb1dc0719ae356e35c339fcccb5ac",
-              "version" : "2.0.0"
-            },
-            "name" : "sourceControlCheckout"
-          },
-          "subpath" : "EnablexWebRTC"
-        },
+        "basedOn" : null,
         "packageRef" : {
           "identity" : "enablexwebrtc",
           "kind" : "remoteSourceControl",
@@ -60,8 +44,11 @@
           "name" : "EnablexWebRTC"
         },
         "state" : {
-          "name" : "edited",
-          "path" : null
+          "checkoutState" : {
+            "revision" : "cf2162e19bcfb1dc0719ae356e35c339fcccb5ac",
+            "version" : "2.0.0"
+          },
+          "name" : "sourceControlCheckout"
         },
         "subpath" : "EnablexWebRTC"
       }
