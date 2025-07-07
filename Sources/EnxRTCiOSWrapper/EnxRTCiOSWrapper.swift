@@ -7,5 +7,5 @@ import Foundation
 // Re-export EnxRTCiOS (your main binary framework)
 @_exported import EnxRTCiOS
 
-// Re-export public APIs if needed
-// You can add wrapper functions or re-export specific types here
+// Re-export SocketIO for EnxRTCiOS dependency
+@_exported import SocketIO
