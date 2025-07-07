@@ -7,11 +7,10 @@ let package = Package(
         .iOS(.v13)
     ],
     products: [
-        .library(name: "EnxRTCiOS", targets: ["EnxRTCiOSWrapper"])
+        .library(name: "EnxRTCiOS", targets: ["EnxRTCiOS", "EnablexWebRTCWrapper"])
     ],
     dependencies: [
-        .package(url: "https://github.com/EnableX/EnablexWebRTC.git", from: "2.0.0"),
-        .package(url: "https://github.com/socketio/socket.io-client-swift", from: "16.1.1")
+        .package(url: "https://github.com/EnableX/EnablexWebRTC.git", from: "2.0.0")
     ],
     targets: [
         .binaryTarget(
@@ -20,13 +19,11 @@ let package = Package(
             checksum: "9d40b991426f7010944eb2ce601573d4c3645e3cf52bbf80bb13510675afd703"
         ),
         .target(
-            name: "EnxRTCiOSWrapper",
+            name: "EnablexWebRTCWrapper",
             dependencies: [
-                "EnxRTCiOS",
-                .product(name: "EnablexWebRTC", package: "EnablexWebRTC"),
-                .product(name: "SocketIO", package: "socket.io-client-swift")
+                .product(name: "EnablexWebRTC", package: "EnablexWebRTC")
             ],
-            path: "Sources/EnxRTCiOSWrapper"
+            path: "Sources/EnablexWebRTC"
         )
     ]
 )
